@@ -21,7 +21,7 @@
 
                         <article class="span7">
 
-                            {{widget('content', 'content', {content: '<h2>Julia Smitti</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'title1', {content: '<h2>Julia Smitti</h2>', lines: 'all'})|raw}}
 
                             <figure class="left">{{widget('image', 'image', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '132px'})|raw}}</figure>
 
@@ -30,10 +30,19 @@
                                 {{widget('content', 'content', {content: '<p><strong>I like to make cool and creative designs. My design stash is always full of refreshing ideas.</strong></p>', lines: 'all'})|raw}}
 
                                 <div class="address">
-                                    <div class="col-name">{{widget('content', 'content', {content: 'Name', lines: 'all'})|raw}}</div>{{widget('companyname', 'companyname', {"business": "Julia Smitti"})|raw}}<div class="clear"></div>
-                                    <div class="col-name">{{widget('content', 'content', {content: 'Address', lines: 'all'})|raw}}</div>{{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}<div class="clear"></div>
-                                    <div class="col-name">{{widget('content', 'content', {content: 'Email', lines: 'all'})|raw}}</div>{{widget('profile', 'email', { 'profileType':'email', 'email':'smitti@gmail.com'})|raw}}<div class="clear"></div>
-                                    <div class="col-name">{{widget('content', 'content', {content: 'Phone', lines: 'all'})|raw}}</div>{{widget('profile', 'phone', { 'profileType':'phone', 'phone':'+123 456 789 111'})|raw}}<div class="clear"></div>
+                                    <div class="col-name">{{widget('content', 'nametext', {content: 'Name', lines: 'all'})|raw}}</div>
+                                    {{widget('companyname', 'companyname', {"business": "Julia Smitti"})|raw}}
+                                    <div class="clear"></div>
+                                    <div class="col-name">{{widget('content', 'addresstext', {content: 'Address', lines: 'all'})|raw}}</div>
+                                    {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
+                                    <div class="clear"></div>
+                                    <div class="col-name">{{widget('content', 'emailtext', {content: 'Email', lines: 'all'})|raw}}</div>
+                                    {{widget('profile', 'email', { 'profileType':'email', 'email':'smitti@gmail.com'})|raw}}
+                                    <div class="clear"></div>
+                                    <div class="col-name">{{widget('content', 'phonetext', {content: 'Phone', lines: 'all'})|raw}}</div>
+                                    {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'+123 456 789 111'})|raw}}
+                                    <div class="clear"></div>
+                                    {{widget('content', 'content', {content: 'This is a content widget.', lines: 'all'})|raw}}
                                 </div>
 
                             </div>
@@ -42,13 +51,13 @@
 
                             <div class="row">
                                 <article class="span2">
-                                    {{widget('content', 'content', {content: '<ul class="list"><li><a href="#">Logo Design</a></li><li><a href="#">Brand Guide</a></li><li><a href="#">Package Design</a></li><li><a href="#">Poster Design</a></li></ul>', lines: 'all'})|raw}}
+                                    {{widget('content', 'list1', {content: '<ul class="list"><li><a href="#">Logo Design</a></li><li><a href="#">Brand Guide</a></li><li><a href="#">Package Design</a></li><li><a href="#">Poster Design</a></li></ul>', lines: 'all'})|raw}}
                                 </article>
                                 <article class="span2">
-                                    {{widget('content', 'content', {content: '<ul class="list"><li><a href="#">Web Design</a></li><li><a href="#">Web Advertising</a></li><li><a href="#">Flyer Design</a></li><li><a href="#">Advertising</a></li></ul>', lines: 'all'})|raw}}
+                                    {{widget('content', 'list2', {content: '<ul class="list"><li><a href="#">Web Design</a></li><li><a href="#">Web Advertising</a></li><li><a href="#">Flyer Design</a></li><li><a href="#">Advertising</a></li></ul>', lines: 'all'})|raw}}
                                 </article>
                                 <article class="span2">
-                                    {{widget('content', 'content', {content: '<ul class="list"><li><a href="#">Icon Design</a></li><li><a href="#">Illustration</a></li><li><a href="#">Photography</a></li><li><a href="#">Seo</a></li></ul>', lines: 'all'})|raw}}
+                                    {{widget('content', 'list3', {content: '<ul class="list"><li><a href="#">Icon Design</a></li><li><a href="#">Illustration</a></li><li><a href="#">Photography</a></li><li><a href="#">Seo</a></li></ul>', lines: 'all'})|raw}}
                                 </article>
                             </div>
 
@@ -56,7 +65,7 @@
 
                         <article class="span5">
 
-                            {{widget('content', 'content', {content: '<h2>latest works</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'title2', {content: '<h2>latest works</h2>', lines: 'all'})|raw}}
 
                         </article>
 
