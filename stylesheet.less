@@ -320,14 +320,27 @@ body{
   margin: 50px auto 0;
 }
 
-ul li{
-  color: @color-swatch2;
-  font-weight: bold;
-  a{
-    color: @color-swatch3;
-    text-decoration: none;
-    &:hover{
-      color: @color-swatch2;
+ul{
+  li{
+    color: @color-swatch2;
+    font-weight: bold;
+    a{
+      color: @color-swatch3;
+      text-decoration: none;
+      &:hover{
+        color: @color-swatch2;
+      }
+    }
+  }
+  &.list{
+    li{
+      overflow: hidden;
+      color: @color-swatch3;
+      span{
+        color: @color-swatch2;
+        display: inline-block;
+        width: 140px;
+      }
     }
   }
 }
