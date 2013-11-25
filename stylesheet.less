@@ -321,8 +321,14 @@ body{
 }
 
 ul li{
-  list-style: none;
-  line-height: @baseLineHeight;
+  color: @color-swatch2;
+  a{
+    color: @color-swatch3;
+    text-decoration: none;
+    &:hover{
+      color: @color-swatch2;
+    }
+  }
 }
 
 /*menu*/
